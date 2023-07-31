@@ -1,0 +1,167 @@
+.container {
+  text-align: center;
+}
+
+.my-films a {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.my-films a:hover div {
+  opacity: 1;
+}
+
+.my-films a div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.my-films a div h3 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+}
+
+
+ul li {
+  display: inline;
+  text-decoration: none;
+
+}
+
+ul {
+  padding: 0;
+  text-decoration: none;
+}
+
+
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+.header {
+  position: relative;
+  height: 1000px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(202, 215, 155, 0.9);
+  font-size: 60px;
+}
+
+.subtitle {
+  position: relative;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(202, 215, 155, 0.8);
+  font-size: 50px;
+}
+
+
+.context {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(229, 232, 218, 1);
+  font-size: 20px;
+  border: 1px solid rgba(202, 215, 155, 0.8);
+  border-radius: 50% 20% / 10% 40%;
+  background-color: rgba(10,10,10,0.3);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.my-films {
+  position: relative;
+  font-size: 30px;
+  color: rgba(202, 215, 155, 0.8);
+  text-decoration: none;
+}
+
+
+.profile-pic {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.socials {
+  position: relative;
+  font-size: 50px;
+}
+
+i {
+  color: rgba(202, 215, 155, 0.8);
+  letter-spacing: 25px;
+}
+
+i:hover {
+  color: black;
+  opacity: 0.5;
+}
+
+h3 {
+  position: relative;
+  height: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(202, 215, 155, 0.8);
+  font-size: 30px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
